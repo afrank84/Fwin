@@ -40,13 +40,34 @@
         max-width: 900px;
     }
  
-/* Profile - About */
-    #collapse_profile{
+/* Collapsed Sections */
+
+    /* Profile - About */
+        #collapse_profile{
+            max-width: 900px;
+            margin: 0 auto;
+            margin-top: -10px;
+            border: solid;
+        }
+
+        #collapse_resume{
+            max-width: 900px;
+            margin: 0 auto;
+            margin-top: -10px;
+            border: solid;
+        }
+        #collapse_portfolio{
         max-width: 900px;
         margin: 0 auto;
         margin-top: -10px;
         border: solid;
-    }
+        }
     	
+        #collapse_contact{
+        max-width: 900px;
+        margin: 0 auto;
+        margin-top: -10px;
+        border: solid;
+        }
 
 

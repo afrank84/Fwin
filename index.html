@@ -64,20 +64,43 @@
         	<nav class="navbar navbar-inverse">
 				  <ul class="nav navbar-nav">
 				  	<li><a href="#collapse_profile" data-toggle="collapse" role="button" aria-expanded="false">Profile</a></li>
-				  	<li><a href="#">Resume</a></li>
-				  	<li><a href="#">Portfolio</a></li>
-				  	<li><a href="#">Contact</a></li>
+				  	<li><a href="#collapse_resume" data-toggle="collapse" role="button" aria-expanded="false">Resume</a></li>
+				  	<li><a href="#collapse_portfolio" data-toggle="collapse" role="button" aria-expanded="false">Portfolio</a></li>
+				  	<li><a href="#collapse_contact" data-toggle="collapse" role="button" aria-expanded="false">Contact</a></li>
 				  </ul>
 			</nav>
         </div>
+    <!--Profile - About Me -->
        	<div class="collapse" id="collapse_profile">
-       			Hide this stuff  		
+       			Profile stuff  		
        	</div>
-    </div>
+
+    <!-- Resume -->
+    	<div class="collapse" id="collapse_resume">
+       			 Resume stuff  		
+       	</div>
+
+    <!-- Portfolio -->
+    	<div class="collapse" id="collapse_portfolio">
+       			Portfolio stuff  		
+       	</div>
+
+    <!-- Contact -->
+    	<div class="collapse" id="collapse_contact">
+       			Contact stuff  		
+       	</div>
+    </div> <!-- /contaner -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    // Allows hidden content to become hidden once again after clicking on another link.
+    	$(document).on('click',function(){
+			$('.collapse').collapse('hide');
+		})
+    </script>
   </body>
 </html>
