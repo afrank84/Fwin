@@ -39,7 +39,14 @@
         border: solid;
         max-width: 900px;
     }
-
+ 
+/* Profile - About */
+    #collapse_profile{
+        max-width: 900px;
+        margin: 0 auto;
+        margin-top: -10px;
+        border: solid;
+    }
     	
 
 
