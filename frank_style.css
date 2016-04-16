@@ -5,6 +5,13 @@
     }
 
 
+/* Home */
+
+    .id_image{
+        width: 153px;
+        height: 186px;
+        margin: 15px;
+    }
     .vcard-centered{
         margin: 0 auto;
         border: solid;
