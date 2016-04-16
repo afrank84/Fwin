@@ -19,6 +19,7 @@
         max-width: 900px;
         margin: 0 auto;
         margin-bottom: 25px;
+        text-align: right;
     }
     .id_image{
         width: 153px;
