@@ -43,7 +43,9 @@
     .id_image{
         width: 153px;
         height: 186px;
-        margin: 15px;
+        margin: 10px;
+        margin-right: 0px;
+        margin-left: 20px;
     }
     .vcard-centered{
         margin: 0 auto;
@@ -51,11 +53,23 @@
         max-width: 900px;
         background-color: #FDC750;
         color: #fff;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
+    .short_info{
 
+    }
     .contact_details{
         margin-top:25px;
         list-style: none;
+        color: #A87F09;
+    }
+    .contact_details label{
+    
+    }
+    .contact_details span{
+        float: right;
+        margin-right: 30px;
     }
  
 /* Collapsed Sections */
