@@ -9,6 +9,7 @@
     }
     .container{
         border: solid;
+        max-width: 902px;
     }
 /* Social Media Icons */
     .icon_all{
@@ -62,11 +63,22 @@
 
         #collapse_resume{
             max-width: 900px;
+            max-height: 100%;
             margin: 0 auto;
-            margin-top: -10px;
-            border: solid;
+            background-color: #fff;
+
+        }
+        /*
+        #collapse_resume .col-md-8{
+            max-height: 100%;
             background-color: #fff;
         }
+        #collapse_resume .col-md-4{
+            max-height: 100%;
+            background-color: #fff;
+        }
+        */
+
         #collapse_portfolio{
             max-width: 900px;
             margin: 0 auto;
