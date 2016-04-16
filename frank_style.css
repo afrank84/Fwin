@@ -4,6 +4,8 @@
         background-color: #E8E8E8;
         min-width: 100%;
     }
+    ul{ list-style: none;}
+    h4{ font-size: 15px; }
     .centered{ /* Use when you just need something centered */
         margin: 0 auto;
     }
@@ -49,6 +51,7 @@
 
     .contact_details{
         margin-top:25px;
+        list-style: none;
     }
  
 /* Collapsed Sections */
@@ -60,24 +63,22 @@
             margin-top: -10px;
             background-color: #fff;
         }
-
+    /* Resume Section */
         #collapse_resume{
             max-width: 900px;
             max-height: 100%;
             margin: 0 auto;
             background-color: #fff;
+        }
+        .resume_unit p{
+            font-size: 12px;
+        }
+        .skills  li h4{
+            font-size: 15px;            
+        }
 
-        }
-        /*
-        #collapse_resume .col-md-8{
-            max-height: 100%;
-            background-color: #fff;
-        }
-        #collapse_resume .col-md-4{
-            max-height: 100%;
-            background-color: #fff;
-        }
-        */
+
+
 
         #collapse_portfolio{
             max-width: 900px;
