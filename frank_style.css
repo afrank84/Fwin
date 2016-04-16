@@ -13,6 +13,14 @@
         fill: #3B5998;
     }
 
+/* Navigation */
+    .nav_container_frank{
+        max-width: 900px;
+        margin: 0 auto;
+        color: #ffffff;
+    }
+
+
 /* Home */
     .social_bar{
         border:solid;
@@ -31,7 +39,7 @@
         border: solid;
         max-width: 900px;
     }
- 
+
     	
 
 
