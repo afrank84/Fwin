@@ -1,12 +1,25 @@
 
-
+/* General */
     .centered{ /* Use when you just need something centered */
         margin: 0 auto;
     }
-
+    .container{
+        border: solid;
+    }
+/* Social Media Icons */
+    .icon_facebook{
+        width: 32px;
+        height: 32px;
+        fill: #3B5998;
+    }
 
 /* Home */
-
+    .social_bar{
+        border:solid;
+        max-width: 900px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
     .id_image{
         width: 153px;
         height: 186px;
