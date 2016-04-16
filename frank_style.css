@@ -10,7 +10,7 @@
         margin: 0 auto;
     }
     .container{
-        border: solid;
+        /*border: solid;*/
         max-width: 900px;
         background-color: #fff;
         padding-bottom: 10px;
@@ -37,7 +37,8 @@
     .social_bar{
         max-width: 900px;
         margin: 0 auto;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
+        margin-top: 20px;
         text-align: right;
     }
     .id_image{
@@ -46,6 +47,7 @@
         margin: 10px;
         margin-right: 0px;
         margin-left: 20px;
+        background-color: #fff;
     }
     .vcard-centered{
         margin: 0 auto;
@@ -71,6 +73,7 @@
         float: right;
         margin-right: 30px;
     }
+
  
 /* Collapsed Sections */
 
@@ -97,15 +100,29 @@
 
 
 
-
+    /* Portfolio */
         #collapse_portfolio{
             max-width: 900px;
             margin: 0 auto;
             margin-top: -10px;
-            border: solid;
             background-color: #fff;
         }
-    	
+        .thumbnail{
+            margin:10px;
+        }
+        .thumbnail h4{
+            font-size: 15px;
+            text-align: center;
+        }
+        .thumbnail p{
+            font-size: 12px;
+            text-align: center;
+            color: red;
+            margin-top: -5px;
+        }
+
+    /* Contact */
+
         #collapse_contact{
             max-width: 900px;
             margin: 0 auto;
