@@ -1,12 +1,16 @@
 
+
+    .centered{ /* Use when you just need something centered */
+        margin: 0 auto;
+    }
+
+
     .vcard-centered{
         margin: 0 auto;
+        border: solid;
+        max-width: 900px;
     }
  
     	
-    <div class="container">
-        <div class="vcard-centered text-center">
-            center
-        </div>
-    </div>
+
 
