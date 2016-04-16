@@ -38,6 +38,12 @@
         margin: 0 auto;
         border: solid;
         max-width: 900px;
+        background-color: #FDC750;
+        color: #fff;
+    }
+
+    .contact_details{
+        margin-top:25px;
     }
  
 /* Collapsed Sections */
