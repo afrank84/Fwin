@@ -9,6 +9,9 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="frank_style.css">
 
+    <!-- Jquery Added for Transitions (Open and Close Hidden Content) -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
     <!-- Bootstrap 3 -->
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -60,6 +63,22 @@
 			  </div>
 			</div>
         </div>
+        <div class="nav_container_frank">
+        	<nav class="navbar navbar-inverse">
+				  <ul class="nav navbar-nav">
+				  	<li><a href="#collapse_profile" data-toggle="collapse" role="button" aria-expanded="false">Profile</a></li>
+				  	<li><a href="#">Resume</a></li>
+				  	<li><a href="#">Portfolio</a></li>
+				  	<li><a href="#">Contact</a></li>
+				  </ul>
+			</nav>
+        </div>
+       	<div class="collapse" id="collapse_profile">
+       		<div class="well">
+       			Hide this stuff
+       		</div>
+       		
+       	</div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
