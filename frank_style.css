@@ -1,5 +1,9 @@
 
 /* General */
+    .body_override{
+        background-color: #E8E8E8;
+        min-width: 100%;
+    }
     .centered{ /* Use when you just need something centered */
         margin: 0 auto;
     }
@@ -7,7 +11,7 @@
         border: solid;
     }
 /* Social Media Icons */
-    .icon_facebook{
+    .icon_all{
         width: 32px;
         height: 32px;
         fill: #3B5998;
@@ -53,7 +57,7 @@
             max-width: 900px;
             margin: 0 auto;
             margin-top: -10px;
-            border: solid;
+            background-color: #fff;
         }
 
         #collapse_resume{
@@ -61,19 +65,22 @@
             margin: 0 auto;
             margin-top: -10px;
             border: solid;
+            background-color: #fff;
         }
         #collapse_portfolio{
-        max-width: 900px;
-        margin: 0 auto;
-        margin-top: -10px;
-        border: solid;
+            max-width: 900px;
+            margin: 0 auto;
+            margin-top: -10px;
+            border: solid;
+            background-color: #fff;
         }
     	
         #collapse_contact{
-        max-width: 900px;
-        margin: 0 auto;
-        margin-top: -10px;
-        border: solid;
+            max-width: 900px;
+            margin: 0 auto;
+            margin-top: -10px;
+            border: solid;
+            background-color: #fff;
         }
 
 
