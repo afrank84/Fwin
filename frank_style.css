@@ -11,9 +11,13 @@
     }
     .container{
         border: solid;
-        max-width: 902px;
+        max-width: 900px;
         background-color: #fff;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
+
+
 /* Social Media Icons */
     .icon_all{
         width: 32px;
@@ -31,7 +35,6 @@
 
 /* Home */
     .social_bar{
-        border:solid;
         max-width: 900px;
         margin: 0 auto;
         margin-bottom: 25px;
