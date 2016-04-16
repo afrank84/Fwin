@@ -12,6 +12,7 @@
     .container{
         border: solid;
         max-width: 902px;
+        background-color: #fff;
     }
 /* Social Media Icons */
     .icon_all{
