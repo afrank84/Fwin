@@ -19,6 +19,9 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		
+	<!-- Adds in font-awesomeness -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,11 +31,15 @@
     <![endif]-->
 	
 	<!--Google Fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   </head>
   <body class="body_override">
-    
+		
     	<div class="social_bar "><!-- Add social Icons here -->
+			<div id="your_name_top" style="display: block;"><!-- Keep Inside of Social -->
+				<h2>ANTHONY FRANK</h2>
+				<h4>GRAPHIC &amp; WEB DESIGNER</h4>
+			</div>
         		<a href="#"><img src="images/48/facebook_48.png" class="shake-slow"></a>
         		<a href="#"><img src="images/48/github_48.png" class="shake-slow"></a>
         		<a href="#"><img src="images/48/twitter_48.png" class="shake-slow"></a>
@@ -49,7 +56,7 @@
 			  </div>
  
 			  <div class="col-md-5 short_info"><!-- Summary Text Goes Here -->
-			  	<h1>Anthony<br/> Frank</h1>
+			  	<h1 id="your_name">ANTHONY<br/> FRANK</h1> 
 			  	<p>I leverage technology in order to work remotely and live an independent and nomadic lifestyle traveling the world with my wife and children... </p>
 			  </div>
 
@@ -66,26 +73,28 @@
 			  </div>
 			</div>
         </div>
-        <div class="nav_container">
+        <div class="nav_container" id="nav_container">
         	<nav class="navbar navbar-inverse">
 				  <ul class="nav navbar-nav">
-				  	<li><a href="#collapse_profile" data-toggle="collapse" role="button" aria-expanded="false">Profile</a></li>
-				  	<li><a href="#collapse_resume" data-toggle="collapse" role="button" aria-expanded="false">Resume</a></li>
-				  	<li><a href="#collapse_portfolio" data-toggle="collapse" role="button" aria-expanded="false">Portfolio</a></li>
-				  	<li><a href="#collapse_contact" data-toggle="collapse" role="button" aria-expanded="false">Contact</a></li>
+				  	<li><a href="#collapse_profile" data-toggle="collapse" role="button" aria-expanded="false"><i class="fa fa-user fa-4x" aria-hidden="true"></i><br/>Profile</a></li>
+				  	<li><a href="#collapse_resume" data-toggle="collapse" role="button" aria-expanded="false"><i class="fa fa-bar-chart fa-4x" aria-hidden="true"></i><br/>Resume</a></li>
+				  	<li><a href="#collapse_portfolio" data-toggle="collapse" role="button" aria-expanded="false"><i class="fa fa-archive fa-4x" aria-hidden="true"></i><br/>Portfolio</a></li>
+				  	<li><a href="#collapse_contact" data-toggle="collapse" role="button" aria-expanded="false"><i class="fa fa-paper-plane fa-4x" aria-hidden="true"></i><br/>Contact</a></li>
 				  </ul>
 			</nav>
         </div>
     <!--Profile - About Me -->
        	<div class="collapse" id="collapse_profile">
-       	<h1>About Me</h1>
+			<h1>About Me</h1>
+			<p>Some text</p>
        		 		
        	</div>
 
     <!-- Resume -->
     	<div class="collapse" id="collapse_resume">
-
+			<h1>Resume</h1>
        		<div class="col-md-8"><!-- Left Side -->
+			
        			<div class="timeline-section">
                         <!-- Timeline for Employment  -->   
                         <h3 class="main-heading">Employment</h3>   
@@ -387,8 +396,8 @@
 
     <!-- Contact -->
     	<div class="collapse" id="collapse_contact">
-       		<div>
-       			Map goes here
+       		<div class="google-maps"> <!-- Css file override Googles defualt below -->
+       			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4761.248564848985!2d-82.05263592076112!3d29.709234235191595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e61a9857c1c73f%3A0xcdcca6491bbcbd1d!2sMelrose%2C+FL+32666!5e0!3m2!1sen!2sus!4v1462132827565" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
        		</div>
        		<div>
        			<h1>Contact Me</h1>
@@ -396,13 +405,13 @@
        			
 
        		<div class ="col-md-4"><!-- Contact Details -->
-       			<ul>
-                            <li>Location: Melrose, FL </li>
-                            <li>Email: AnthonyFrank@live.com</li>
-                            <li>Website: www.AnthonyFrank.me</li>
-							<!--<li><img src="images/Facebook-icon_32x32_flat.png"></li>-->
-                            <!--<li>Phone: +123 456 789 111</li>-->
-                        </ul>
+       			<ul class="contact_page_details">
+                    <li>Location: Melrose, FL </li>
+                    <li>Email: AnthonyFrank@live.com</li>
+                    <li>Website: www.AnthonyFrank.me</li>
+					<!--<li><img src="images/Facebook-icon_32x32_flat.png"></li>-->
+                    <!--<li>Phone: +123 456 789 111</li>-->
+                </ul>
        		</div>  	
        		<div class="col-md-8">
        			<form class="form-horizontal" role="form" method="post" action="#">
@@ -456,7 +465,7 @@
 
     <script>
     // Allows hidden content to become hidden once again after clicking anywhere...
-    	$(document).on('click',function(){
+    	$("#nav_container").on('click',function(){
 			$('.collapse').collapse('hide');
 		})
     </script>

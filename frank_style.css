@@ -5,25 +5,26 @@
         min-width: 100%;
     }
     ul{ list-style: none;}
-	h1{font-family: 'Oswald', sans-serif;} /* Not working */
-    h4{ font-size: 15px; }
+	
     .centered{ /* Use when you just need something centered */
         margin: 0 auto;
     }
     .container_frank{
-        /*border: solid;*/
+    /*border: solid;*/
         max-width: 900px;
         background-color: #fff;
 		margin-right: auto;
 		margin-left: auto;
 		background-color: #FFF;
-		/*Adds Shadow to Entire container*/
-		
+	/*Adds Shadow to Entire container*/
 	    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 	    -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 	    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
     }
 
+	.container_frank h1{
+		font-family: 'Oswald', sans-serif;
+	}
 
 /* Social Media Icons */
     .icon_all{
@@ -33,18 +34,50 @@
     }
 
 /* Navigation */
+	#your_name_top {
+		float: left;
+		overflow: hidden;
+		margin-left: 5px;
+		display: none;
+		font-family: 'Oswald', sans-serif;
+
+	}
+	#your_name_top h4{
+		margin-top: -10px; 
+		margin-left: -20px; /*doesn't work */
+	}
+
+
+	#your_name {
+		font-size: 50px;
+		font-weight: 900;
+		color: #fff;
+		line-height: 50px;
+		font-family: 'Oswald', sans-serif;
+		font-weight:400;
+	}
+
     .nav_container_frank{
         max-width: 900px;
         margin: 0 auto;
         color: #000;
     }
-
-
-	nav.navbar-inverse { /* Overides bootstrap.min.css */
-    background-color: #ededed;
-    border-color: #ededed;
+	.navbar .navbar-nav {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
 	}
-	nav.navbar-inverse {
+	.navbar .navbar-nav li { /* Spacing for icon fonts*/
+		margin-left: 25px;
+		margin-right:25px;
+	}
+	.navbar .navbar-collapse {
+		text-align: center;
+	}
+	
+	nav.navbar-inverse { /* Overides bootstrap.min.css */
+		background-color: #ededed;
+		border-color: #ededed;
 		/* background-image: -webkit-linear-gradient(top,#3c3c3c 0,#222 100%); */
 		/* background-image: -o-linear-gradient(top,#3c3c3c 0,#222 100%); */
 		/* background-image: -webkit-gradient(linear,left top,left bottom,from(#3c3c3c),to(#222)); */
@@ -53,17 +86,19 @@
 		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 		background-repeat: repeat-x;
 		border-radius: 0px;
+		text-align: center;
+		float: none;
 	}
 	
 	.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
 	color: #000;
-	background-color: transparent;
+	/*background-color: transparent;*/
 	}
 /* Home */
     .social_bar{
         max-width: 900px;
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         margin-top: 20px;
         text-align: right;
     }
@@ -96,7 +131,7 @@
     .contact_details label{
     
     }
-    .contact_details span{
+    .contact_details span{ /* For details in v-card */
         float: right;
         margin-right: 30px;
     }
@@ -110,13 +145,19 @@
             margin: 0 auto;
             margin-top: -10px;
             background-color: #fff;
+			margin-bottom: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
         }
     /* Resume Section */
         #collapse_resume{
             max-width: 900px;
-            max-height: 100%;
-            margin: 0 auto;
+            margin: 0 auto; 
+			margin-top: -10px;
             background-color: #fff;
+			min-height: 1200px;
+			margin-bottom: 10px;
+			margin-left: 20px;
         }
         .resume_unit p{
             font-size: 12px;
@@ -133,6 +174,7 @@
             margin: 0 auto;
             margin-top: -10px;
             background-color: #fff;
+			margin-bottom: 10px;
         }
         .thumbnail{
             margin:10px;
@@ -154,9 +196,30 @@
             max-width: 900px;
             margin: 0 auto;
             margin-top: -10px;
-            border: solid;
             background-color: #fff;
+			min-height: 900px;
+			margin-bottom: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
         }
+		
+		.contact_page_details ul{
+			float: left;
+		}
+		
+		.google-maps {
+			position: relative;
+			padding-bottom: 30%; /* This is the aspect ratio */
+			height: 0;
+			overflow: hidden;
+		}
+		.google-maps iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100% !important;
+			height: 350px; !important;
+		}
 
 /*==================================================
  * Special Effects
