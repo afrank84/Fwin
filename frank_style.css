@@ -1,20 +1,27 @@
-
 /* General */
+	
     .body_override{
         background-color: #E8E8E8;
         min-width: 100%;
     }
     ul{ list-style: none;}
+	h1{font-family: 'Oswald', sans-serif;}
     h4{ font-size: 15px; }
     .centered{ /* Use when you just need something centered */
         margin: 0 auto;
     }
-    .container{
+    .container_frank{
         /*border: solid;*/
         max-width: 900px;
         background-color: #fff;
-        padding-bottom: 10px;
-        padding-top: 10px;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: #FFF;
+		/*Adds Shadow to Entire container*/
+		
+	    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	    -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
     }
 
 
@@ -29,10 +36,29 @@
     .nav_container_frank{
         max-width: 900px;
         margin: 0 auto;
-        color: #ffffff;
+        color: #000;
     }
 
 
+	nav.navbar-inverse { /* Overides bootstrap.min.css */
+    background-color: #ededed;
+    border-color: #ededed;
+	}
+	nav.navbar-inverse {
+		/* background-image: -webkit-linear-gradient(top,#3c3c3c 0,#222 100%); */
+		/* background-image: -o-linear-gradient(top,#3c3c3c 0,#222 100%); */
+		/* background-image: -webkit-gradient(linear,left top,left bottom,from(#3c3c3c),to(#222)); */
+		background-image: linear-gradient(to bottom,#ededed 0,#ededed 100%);
+		/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0); */
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+		background-repeat: repeat-x;
+		border-radius: 0px;
+	}
+	
+	.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+	color: #000;
+	background-color: transparent;
+	}
 /* Home */
     .social_bar{
         max-width: 900px;
@@ -41,6 +67,7 @@
         margin-top: 20px;
         text-align: right;
     }
+
     .id_image{
         width: 153px;
         height: 186px;
@@ -131,4 +158,14 @@
             background-color: #fff;
         }
 
+/*==================================================
+ * Special Effects
+ * ===============================================*/
+ 
+	/* Adds Shadow to things*/
+	.one-edge-shadow {
+	  -webkit-box-shadow: 0 8px 6px -6px black;
+		 -moz-box-shadow: 0 8px 6px -6px black;
+			  box-shadow: 0 8px 6px -6px black;
+	}
 
