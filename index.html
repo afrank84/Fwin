@@ -25,8 +25,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-		<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
   </head>
   <body class="body_override">
     
@@ -43,7 +41,7 @@
         <div class="vcard-centered">
         	<div class="row">
 			  <div class="col-md-3"><!-- Image goes Here -->
-			  	<img src="http://anthonyfrank.me/portfolio/images/frank_clear.png" class="id_image centered effect5">
+			  	<img src="http://anthonyfrank.me/portfolio/images/frank_clear.png" class="id_image centered">
 			  </div>
 
 			  <div class="col-md-5 short_info"><!-- Summary Text Goes Here -->
@@ -64,26 +62,16 @@
 			  </div>
 			</div>
         </div>
-
         <div class="nav_container_frank">
-        	<ul class="menu cf">
-				<li><a href="">Menu item</a></li>
-				<li>
-					<a href="">Menu item</a>
-					<ul class="submenu">
-						<li><a href="">Submenu item</a></li>
-						<li><a href="">Submenu item</a></li>
-						<li><a href="">Submenu item</a></li>
-						<li><a href="">Submenu item</a></li>
-					</ul>			
-				</li>
-				<li><a href="">Menu item</a></li>
-				<li><a href="">Menu item</a></li>
-				<li><a href="">Menu item</a></li>
-			</ul>
+        	<nav class="navbar navbar-inverse">
+				  <ul class="nav navbar-nav">
+				  	<li><a href="#collapse_profile" data-toggle="collapse" role="button" aria-expanded="false">Profile</a></li>
+				  	<li><a href="#collapse_resume" data-toggle="collapse" role="button" aria-expanded="false">Resume</a></li>
+				  	<li><a href="#collapse_portfolio" data-toggle="collapse" role="button" aria-expanded="false">Portfolio</a></li>
+				  	<li><a href="#collapse_contact" data-toggle="collapse" role="button" aria-expanded="false">Contact</a></li>
+				  </ul>
+			</nav>
         </div>
-		
-
     <!--Profile - About Me -->
        	<div class="collapse" id="collapse_profile">
        	<h1>About Me</h1>
@@ -456,16 +444,6 @@
 
    <!-- FOOTER -->
    <p align="center">Copyright Anthony Frank @ 2016 </p>
-   
-   <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
-	<script>
-		(function(){
-		  var bsa = document.createElement('script');
-			 bsa.async = true;
-			 bsa.src = 'http://www.red-team-design.com/js/adpacks-demo.js';
-		  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
-		})();
-	</script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
