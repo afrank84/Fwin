@@ -5,7 +5,7 @@
         min-width: 100%;
     }
     ul{ list-style: none;}
-	h1{font-family: 'Oswald', sans-serif;}
+	h1{font-family: 'Oswald', sans-serif;} /* Not working */
     h4{ font-size: 15px; }
     .centered{ /* Use when you just need something centered */
         margin: 0 auto;
