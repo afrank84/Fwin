@@ -1,11 +1,16 @@
 /* General */
-	
+	html {
+		overflow: -moz-scrollbars-vertical; 
+		overflow-y: scroll;
+	}
     .body_override{
         background-color: #E8E8E8;
         min-width: 100%;
     }
     ul{ list-style: none;}
-	
+	a:hover{
+		color:#000;
+	}
     .centered{ /* Use when you just need something centered */
         margin: 0 auto;
     }
@@ -45,6 +50,7 @@
 	#your_name_top h4{
 		margin-top: -10px; 
 		margin-left: -20px; /*doesn't work */
+		color: #666;
 	}
 
 
@@ -71,6 +77,7 @@
 		margin-left: 25px;
 		margin-right:25px;
 	}
+	
 	.navbar .navbar-collapse {
 		text-align: center;
 	}
@@ -127,9 +134,11 @@
         margin-top:25px;
         list-style: none;
         color: #A87F09;
+		border-left: double;
     }
     .contact_details label{
-    
+		font-family: 'Oswald', sans-serif;
+		
     }
     .contact_details span{ /* For details in v-card */
         float: right;
@@ -231,4 +240,310 @@
 		 -moz-box-shadow: 0 8px 6px -6px black;
 			  box-shadow: 0 8px 6px -6px black;
 	}
+
+
+	/* Bouncing CSS */
+	.css3-notification {
+	-webkit-animation: bounce 1200ms ease-out;
+	-moz-animation: bounce 1200ms ease-out;
+	-o-animation: bounce 1200ms ease-out;
+	animation: bounce 1200ms ease-out;
+}
+
+/* Webkit, Chrome and Safari */
+
+@-webkit-keyframes bounce {
+  0% {
+	-webkit-transform:translateY(-100%);
+    opacity: 0;
+  }
+  5% {
+  	-webkit-transform:translateY(-100%);
+    opacity: 0;
+  }
+  15% {
+  	-webkit-transform:translateY(0);
+    padding-bottom: 5px;
+  }
+  30% {
+  	-webkit-transform:translateY(-50%);
+  }
+  40% {
+  	-webkit-transform:translateY(0%);
+    padding-bottom: 6px;
+  }
+  50% {
+  	-webkit-transform:translateY(-30%);
+  }
+  70% {
+  	-webkit-transform:translateY(0%);
+    padding-bottom: 7px;
+  }
+  80% {
+  	-webkit-transform:translateY(-15%);
+  }
+  90% {
+  	-webkit-transform:translateY(0%);
+  	padding-bottom: 8px;
+  }
+  95% {
+  	-webkit-transform:translateY(-10%);
+  }
+  97% {
+  	-webkit-transform:translateY(0%);
+  	padding-bottom: 9px;
+  }
+  99% {
+  	-webkit-transform:translateY(-5%);
+  }
+  100% {
+  	-webkit-transform:translateY(0);
+  	padding-bottom: 9px;
+    opacity: 1;
+  }
+}
+
+/* Mozilla Firefox 15 below */
+@-moz-keyframes bounce {
+  0% {
+	-moz-transform:translateY(-100%);
+    opacity: 0;
+  }
+  5% {
+  	-moz-transform:translateY(-100%);
+    opacity: 0;
+  }
+  15% {
+  	-moz-transform:translateY(0);
+    padding-bottom: 5px;
+  }
+  30% {
+  	-moz-transform:translateY(-50%);
+  }
+  40% {
+  	-moz-transform:translateY(0%);
+    padding-bottom: 6px;
+  }
+  50% {
+  	-moz-transform:translateY(-30%);
+  }
+  70% {
+  	-moz-transform:translateY(0%);
+    padding-bottom: 7px;
+  }
+  80% {
+  	-moz-transform:translateY(-15%);
+  }
+  90% {
+  	-moz-transform:translateY(0%);
+  	padding-bottom: 8px;
+  }
+  95% {
+  	-moz-transform:translateY(-10%);
+  }
+  97% {
+  	-moz-transform:translateY(0%);
+  	padding-bottom: 9px;
+  }
+  99% {
+  	-moz-transform:translateY(-5%);
+  }
+  100% {
+  	-moz-transform:translateY(0);
+  	padding-bottom: 9px;
+    opacity: 1;
+  }
+}
+
+/* Opera 12.0 */
+@-o-keyframes bounce {
+  0% {
+	-o-transform:translateY(-100%);
+    opacity: 0;
+  }
+  5% {
+  	-o-transform:translateY(-100%);
+    opacity: 0;
+  }
+  15% {
+  	-o-transform:translateY(0);
+    padding-bottom: 5px;
+  }
+  30% {
+  	-o-transform:translateY(-50%);
+  }
+  40% {
+  	-o-transform:translateY(0%);
+    padding-bottom: 6px;
+  }
+  50% {
+  	-o-transform:translateY(-30%);
+  }
+  70% {
+  	-o-transform:translateY(0%);
+    padding-bottom: 7px;
+  }
+  80% {
+  	-o-transform:translateY(-15%);
+  }
+  90% {
+  	-o-transform:translateY(0%);
+  	padding-bottom: 8px;
+  }
+  95% {
+  	-o-transform:translateY(-10%);
+  }
+  97% {
+  	-o-transform:translateY(0%);
+  	padding-bottom: 9px;
+  }
+  99% {
+  	-o-transform:translateY(-5%);
+  }
+  100% {
+  	-o-transform:translateY(0);
+  	padding-bottom: 9px;
+    opacity: 1;
+  }
+}
+
+/* W3, Opera 12+, Firefox 16+ */
+@keyframes bounce {
+  0% {
+	transform:translateY(-100%);
+    opacity: 0;
+  }
+  5% {
+  	transform:translateY(-100%);
+    opacity: 0;
+  }
+  15% {
+  	transform:translateY(0);
+    padding-bottom: 5px;
+  }
+  30% {
+  	transform:translateY(-50%);
+  }
+  40% {
+  	transform:translateY(0%);
+    padding-bottom: 6px;
+  }
+  50% {
+  	transform:translateY(-30%);
+  }
+  70% {
+  	transform:translateY(0%);
+    padding-bottom: 7px;
+  }
+  80% {
+  	transform:translateY(-15%);
+  }
+  90% {
+  	transform:translateY(0%);
+  	padding-bottom: 8px;
+  }
+  95% {
+  	transform:translateY(-7%);
+  }
+  97% {
+  	transform:translateY(0%);
+  	padding-bottom: 9px;
+  }
+  99% {
+  	transform:translateY(-3%);
+  }
+  100% {
+  	transform:translateY(0);
+  	padding-bottom: 9px;
+    opacity: 1;
+  }
+}
+
+/* Swinging Effect */
+
+@-webkit-keyframes swinging{
+	0%{-webkit-transform: rotate(10deg);}
+	50%{-webkit-transform: rotate(-5deg)}
+	100%{-webkit-transform: rotate(10deg);}
+}
+
+@keyframes swinging{
+	0%{transform: rotate(10deg);}
+	50%{transform: rotate(-5deg)}
+	100%{transform: rotate(10deg);}
+}
+
+.swingimage{
+	position: relative;
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+	animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+.swingimageshift{
+	position: relative;
+	left: 50px;
+	margin-top: 30px;
+	-webkit-transform-origin: 35% 0;
+	transform-origin: 35% 0;
+	-webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+	animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+/* Text Kukuri Effect */
+
+.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	line-height: 1;
+	display: inline-block;
+	color: #fff;
+}
+
+.link--kukuri {
+	text-transform: uppercase;
+	overflow: hidden;
+
+}
+
+.link--kukuri:hover {
+	color: #fff;
+	text-decoration: none;
+
+}
+
+.link--kukuri::after {
+	content: '';
+	position: absolute;gi
+	height: 16px;
+
+	top: 50%;
+	margin-top: -8px;
+	right: 0;
+	background: #F9F9F9;
+	transform: translate3d(-100%,0,0);
+	transition: transform 0.4s;
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.link--kukuri:hover::after {
+	transform: translate3d(100%,0,0);
+}
+
+.link--kukuri::before {
+	content: attr(data-letters);
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	color: #424242;
+	white-space: nowrap;
+	width: 0%;
+	transition: width 0.4s 0.3s;
+}
+
+.link--kukuri:hover::before {
+	width: 100%;
+}
 
